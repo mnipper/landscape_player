@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C8247A014F59F96005DF084 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82479F14F59F96005DF084 /* UIKit.framework */; };
+		4C8247A214F59F96005DF084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8247A114F59F96005DF084 /* Foundation.framework */; };
+		4C8247A414F59F96005DF084 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8247A314F59F96005DF084 /* CoreGraphics.framework */; };
+		4C8247AA14F59F96005DF084 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247A814F59F96005DF084 /* InfoPlist.strings */; };
+		4C8247AC14F59F96005DF084 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8247AB14F59F96005DF084 /* main.m */; };
+		4C8247B014F59F96005DF084 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8247AF14F59F96005DF084 /* AppDelegate.m */; };
+		4C8247B314F59F96005DF084 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247B114F59F96005DF084 /* MainStoryboard.storyboard */; };
+		4C8247B614F59F96005DF084 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8247B514F59F96005DF084 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C82479B14F59F96005DF084 /* LandscapeMp3Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandscapeMp3Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C82479F14F59F96005DF084 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C8247A114F59F96005DF084 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C8247A314F59F96005DF084 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C8247A714F59F96005DF084 /* LandscapeMp3Player-Info.plist */ = {isa = PBXFileReference; path = "LandscapeMp3Player-Info.plist"; sourceTree = "<group>"; };
+		4C8247A914F59F96005DF084 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C8247AB14F59F96005DF084 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C8247AD14F59F96005DF084 /* LandscapeMp3Player-Prefix.pch */ = {isa = PBXFileReference; path = "LandscapeMp3Player-Prefix.pch"; sourceTree = "<group>"; };
+		4C8247AE14F59F96005DF084 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C8247AF14F59F96005DF084 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C8247B214F59F96005DF084 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		4C8247B414F59F96005DF084 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		4C8247B514F59F96005DF084 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C82479814F59F96005DF084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8247A014F59F96005DF084 /* UIKit.framework in Frameworks */,
+				4C8247A214F59F96005DF084 /* Foundation.framework in Frameworks */,
+				4C8247A414F59F96005DF084 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C82479014F59F95005DF084 = {
+			isa = PBXGroup;
+			children = (
+				4C8247A514F59F96005DF084 /* LandscapeMp3Player */,
+				4C82479E14F59F96005DF084 /* Frameworks */,
+				4C82479C14F59F96005DF084 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C82479C14F59F96005DF084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C82479B14F59F96005DF084 /* LandscapeMp3Player.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C82479E14F59F96005DF084 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C82479F14F59F96005DF084 /* UIKit.framework */,
+				4C8247A114F59F96005DF084 /* Foundation.framework */,
+				4C8247A314F59F96005DF084 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C8247A514F59F96005DF084 /* LandscapeMp3Player */ = {
+			isa = PBXGroup;
+			children = (
+				4C8247AE14F59F96005DF084 /* AppDelegate.h */,
+				4C8247AF14F59F96005DF084 /* AppDelegate.m */,
+				4C8247B114F59F96005DF084 /* MainStoryboard.storyboard */,
+				4C8247B414F59F96005DF084 /* ViewController.h */,
+				4C8247B514F59F96005DF084 /* ViewController.m */,
+				4C8247A614F59F96005DF084 /* Supporting Files */,
+			);
+			path = LandscapeMp3Player;
+			sourceTree = "<group>";
+		};
+		4C8247A614F59F96005DF084 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C8247A714F59F96005DF084 /* LandscapeMp3Player-Info.plist */,
+				4C8247A814F59F96005DF084 /* InfoPlist.strings */,
+				4C8247AB14F59F96005DF084 /* main.m */,
+				4C8247AD14F59F96005DF084 /* LandscapeMp3Player-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C82479A14F59F96005DF084 /* LandscapeMp3Player */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C8247B914F59F96005DF084 /* Build configuration list for PBXNativeTarget "LandscapeMp3Player" */;
+			buildPhases = (
+				4C82479714F59F96005DF084 /* Sources */,
+				4C82479814F59F96005DF084 /* Frameworks */,
+				4C82479914F59F96005DF084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LandscapeMp3Player;
+			productName = LandscapeMp3Player;
+			productReference = 4C82479B14F59F96005DF084 /* LandscapeMp3Player.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C82479214F59F95005DF084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Wake Forest University";
+			};
+			buildConfigurationList = 4C82479514F59F95005DF084 /* Build configuration list for PBXProject "LandscapeMp3Player" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C82479014F59F95005DF084;
+			productRefGroup = 4C82479C14F59F96005DF084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C82479A14F59F96005DF084 /* LandscapeMp3Player */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C82479914F59F96005DF084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8247AA14F59F96005DF084 /* InfoPlist.strings in Resources */,
+				4C8247B314F59F96005DF084 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C82479714F59F96005DF084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C8247AC14F59F96005DF084 /* main.m in Sources */,
+				4C8247B014F59F96005DF084 /* AppDelegate.m in Sources */,
+				4C8247B614F59F96005DF084 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C8247A814F59F96005DF084 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8247A914F59F96005DF084 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C8247B114F59F96005DF084 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C8247B214F59F96005DF084 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C8247B714F59F96005DF084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		4C8247B814F59F96005DF084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C8247BA14F59F96005DF084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LandscapeMp3Player/LandscapeMp3Player-Prefix.pch";
+				INFOPLIST_FILE = "LandscapeMp3Player/LandscapeMp3Player-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C8247BB14F59F96005DF084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LandscapeMp3Player/LandscapeMp3Player-Prefix.pch";
+				INFOPLIST_FILE = "LandscapeMp3Player/LandscapeMp3Player-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C82479514F59F95005DF084 /* Build configuration list for PBXProject "LandscapeMp3Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8247B714F59F96005DF084 /* Debug */,
+				4C8247B814F59F96005DF084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C8247B914F59F96005DF084 /* Build configuration list for PBXNativeTarget "LandscapeMp3Player" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8247BA14F59F96005DF084 /* Debug */,
+				4C8247BB14F59F96005DF084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C82479214F59F95005DF084 /* Project object */;
+}
