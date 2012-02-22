@@ -10,4 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *adminCloud;
+@property (weak, nonatomic) IBOutlet UIButton *nextCloud;
+@property (weak, nonatomic) IBOutlet UIButton *previousCloud;
+@property (weak, nonatomic) IBOutlet UIImageView *playSunButton;
+
+- (IBAction)playSun:(id)sender;
+- (IBAction)previousTrack:(id)sender;
+- (IBAction)nextTrack:(id)sender;
+- (IBAction)adminButton:(id)sender;
+
 @end

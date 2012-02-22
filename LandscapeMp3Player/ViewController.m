@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize adminCloud;
+@synthesize nextCloud;
+@synthesize previousCloud;
+@synthesize playSunButton;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +30,11 @@
 
 - (void)viewDidUnload
 {
+    [self setPlaySunButton:nil];
+    [self setPlaySunButton:nil];
+    [self setPreviousCloud:nil];
+    [self setNextCloud:nil];
+    [self setAdminCloud:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -55,6 +64,30 @@
 {
     // Return YES for supported orientations
     return YES;
+}
+
+- (IBAction)playSun:(id)sender {
+    
+    NSLog(@"Play.");
+    
+}
+
+- (IBAction)previousTrack:(id)sender {
+    
+    NSLog(@"Previous Track.");
+    
+}
+
+- (IBAction)nextTrack:(id)sender {
+    
+    NSLog(@"Next Track.");
+    
+}
+
+- (IBAction)adminButton:(id)sender {
+    
+    NSLog(@"Admin Button.");
+    
 }
 
 @end
