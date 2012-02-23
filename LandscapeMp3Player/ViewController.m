@@ -74,11 +74,7 @@ NSTimer *timer;
     
     NSLog(@"Play.");
     
-    // This is the method that makes the bunny hop up and down.
-    [self bunnyHop];
-    
-    // This is the timer that makes the bunny hop right.
-    timer = [NSTimer scheduledTimerWithTimeInterval:.6 target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
+    [self animateBunny];
     
 }
 
@@ -98,6 +94,15 @@ NSTimer *timer;
     
     NSLog(@"Admin Button.");
     
+}
+
+- (void)animateBunny
+{
+    // This is the method that makes the bunny hop up and down.
+    [self bunnyHop];
+    
+    // This is the timer that makes the bunny hop right.
+    timer = [NSTimer scheduledTimerWithTimeInterval:.6 target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
 }
 
 - (void)bunnyHop
