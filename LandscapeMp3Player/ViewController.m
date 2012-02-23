@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize bunnyImageView;
 @synthesize adminCloud;
 @synthesize nextCloud;
 @synthesize previousCloud;
@@ -35,6 +36,7 @@
     [self setPreviousCloud:nil];
     [self setNextCloud:nil];
     [self setAdminCloud:nil];
+    [self setBunnyImageView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -69,6 +71,7 @@
 - (IBAction)playSun:(id)sender {
     
     NSLog(@"Play.");
+    [self bunnyHop];
     
 }
 
@@ -88,6 +91,27 @@
     
     NSLog(@"Admin Button.");
     
+}
+
+- (void)bunnyHop
+{
+    UIImage *bunny1 = [UIImage imageNamed:@"bunny_0011_Frame-1.png"];
+    UIImage *bunny2 = [UIImage imageNamed:@"bunny_0010_Frame-2.png"];
+    UIImage *bunny3 = [UIImage imageNamed:@"bunny_0009_Frame-3.png"];
+    UIImage *bunny4 = [UIImage imageNamed:@"bunny_0008_Frame-4.png"];
+    UIImage *bunny5 = [UIImage imageNamed:@"bunny_0007_Frame-5.png"];
+    UIImage *bunny6 = [UIImage imageNamed:@"bunny_0006_Frame-6.png"];
+    UIImage *bunny7 = [UIImage imageNamed:@"bunny_0005_Frame-7.png"];
+    UIImage *bunny8 = [UIImage imageNamed:@"bunny_0004_Frame-8.png"];
+    UIImage *bunny9 = [UIImage imageNamed:@"bunny_0003_Frame-9.png"];
+    UIImage *bunny10 = [UIImage imageNamed:@"bunny_0002_Frame-10.png"];
+    UIImage *bunny11 = [UIImage imageNamed:@"bunny_0001_Frame-11.png"];
+    UIImage *bunny12 = [UIImage imageNamed:@"bunny_0000_Frame-12.png"];
+    
+    self.bunnyImageView.animationImages = [[NSArray alloc] initWithObjects:bunny1, bunny2, bunny3, bunny4, bunny5, bunny6, bunny7, bunny8, bunny9, bunny10, bunny11, bunny12, nil];
+    self.bunnyImageView.animationRepeatCount = 0;
+    self.bunnyImageView.animationDuration = 1.2;
+    [self.bunnyImageView startAnimating];
 }
 
 @end

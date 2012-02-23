@@ -15,11 +15,24 @@
 		4C8247B014F59F96005DF084 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8247AF14F59F96005DF084 /* AppDelegate.m */; };
 		4C8247B314F59F96005DF084 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247B114F59F96005DF084 /* MainStoryboard.storyboard */; };
 		4C8247B614F59F96005DF084 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8247B514F59F96005DF084 /* ViewController.m */; };
-		4C8247BF14F5A479005DF084 /* playsun.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247BE14F5A479005DF084 /* playsun.png */; };
 		4C8247C114F5A6AC005DF084 /* nextcloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247C014F5A6AC005DF084 /* nextcloud.png */; };
 		4C8247C314F5A73B005DF084 /* previouscloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247C214F5A73B005DF084 /* previouscloud.png */; };
 		4C8247C514F5A847005DF084 /* bunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247C414F5A847005DF084 /* bunny.png */; };
 		4C8247C714F5A855005DF084 /* admincloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247C614F5A855005DF084 /* admincloud.png */; };
+		4C8247C914F5BADB005DF084 /* player_draft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247C814F5BADB005DF084 /* player_draft.png */; };
+		4C8247D114F5BC9B005DF084 /* playsunbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D014F5BC9B005DF084 /* playsunbutton.png */; };
+		4C8247E014F5C1A7005DF084 /* bunny_0000_Frame-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D414F5C1A6005DF084 /* bunny_0000_Frame-12.png */; };
+		4C8247E114F5C1A7005DF084 /* bunny_0001_Frame-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D514F5C1A6005DF084 /* bunny_0001_Frame-11.png */; };
+		4C8247E214F5C1A7005DF084 /* bunny_0002_Frame-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D614F5C1A6005DF084 /* bunny_0002_Frame-10.png */; };
+		4C8247E314F5C1A7005DF084 /* bunny_0003_Frame-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D714F5C1A6005DF084 /* bunny_0003_Frame-9.png */; };
+		4C8247E414F5C1A7005DF084 /* bunny_0004_Frame-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D814F5C1A7005DF084 /* bunny_0004_Frame-8.png */; };
+		4C8247E514F5C1A7005DF084 /* bunny_0005_Frame-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247D914F5C1A7005DF084 /* bunny_0005_Frame-7.png */; };
+		4C8247E614F5C1A7005DF084 /* bunny_0006_Frame-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247DA14F5C1A7005DF084 /* bunny_0006_Frame-6.png */; };
+		4C8247E714F5C1A7005DF084 /* bunny_0007_Frame-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247DB14F5C1A7005DF084 /* bunny_0007_Frame-5.png */; };
+		4C8247E814F5C1A7005DF084 /* bunny_0008_Frame-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247DC14F5C1A7005DF084 /* bunny_0008_Frame-4.png */; };
+		4C8247E914F5C1A7005DF084 /* bunny_0009_Frame-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247DD14F5C1A7005DF084 /* bunny_0009_Frame-3.png */; };
+		4C8247EA14F5C1A7005DF084 /* bunny_0010_Frame-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247DE14F5C1A7005DF084 /* bunny_0010_Frame-2.png */; };
+		4C8247EB14F5C1A7005DF084 /* bunny_0011_Frame-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8247DF14F5C1A7005DF084 /* bunny_0011_Frame-1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +49,24 @@
 		4C8247B214F59F96005DF084 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4C8247B414F59F96005DF084 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4C8247B514F59F96005DF084 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4C8247BC14F5A0E4005DF084 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
-		4C8247BE14F5A479005DF084 /* playsun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playsun.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/playsun.png; sourceTree = "<group>"; };
 		4C8247C014F5A6AC005DF084 /* nextcloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nextcloud.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/nextcloud.png; sourceTree = "<group>"; };
 		4C8247C214F5A73B005DF084 /* previouscloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = previouscloud.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/previouscloud.png; sourceTree = "<group>"; };
 		4C8247C414F5A847005DF084 /* bunny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bunny.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunny.png; sourceTree = "<group>"; };
 		4C8247C614F5A855005DF084 /* admincloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = admincloud.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/admincloud.png; sourceTree = "<group>"; };
+		4C8247C814F5BADB005DF084 /* player_draft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = player_draft.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/player_draft.png; sourceTree = "<group>"; };
+		4C8247D014F5BC9B005DF084 /* playsunbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playsunbutton.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/playsunbutton.png; sourceTree = "<group>"; };
+		4C8247D414F5C1A6005DF084 /* bunny_0000_Frame-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0000_Frame-12.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0000_Frame-12.png"; sourceTree = "<group>"; };
+		4C8247D514F5C1A6005DF084 /* bunny_0001_Frame-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0001_Frame-11.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0001_Frame-11.png"; sourceTree = "<group>"; };
+		4C8247D614F5C1A6005DF084 /* bunny_0002_Frame-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0002_Frame-10.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0002_Frame-10.png"; sourceTree = "<group>"; };
+		4C8247D714F5C1A6005DF084 /* bunny_0003_Frame-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0003_Frame-9.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0003_Frame-9.png"; sourceTree = "<group>"; };
+		4C8247D814F5C1A7005DF084 /* bunny_0004_Frame-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0004_Frame-8.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0004_Frame-8.png"; sourceTree = "<group>"; };
+		4C8247D914F5C1A7005DF084 /* bunny_0005_Frame-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0005_Frame-7.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0005_Frame-7.png"; sourceTree = "<group>"; };
+		4C8247DA14F5C1A7005DF084 /* bunny_0006_Frame-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0006_Frame-6.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0006_Frame-6.png"; sourceTree = "<group>"; };
+		4C8247DB14F5C1A7005DF084 /* bunny_0007_Frame-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0007_Frame-5.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0007_Frame-5.png"; sourceTree = "<group>"; };
+		4C8247DC14F5C1A7005DF084 /* bunny_0008_Frame-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0008_Frame-4.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0008_Frame-4.png"; sourceTree = "<group>"; };
+		4C8247DD14F5C1A7005DF084 /* bunny_0009_Frame-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0009_Frame-3.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0009_Frame-3.png"; sourceTree = "<group>"; };
+		4C8247DE14F5C1A7005DF084 /* bunny_0010_Frame-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0010_Frame-2.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0010_Frame-2.png"; sourceTree = "<group>"; };
+		4C8247DF14F5C1A7005DF084 /* bunny_0011_Frame-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bunny_0011_Frame-1.png"; path = "../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/bunnyanimation/bunny_0011_Frame-1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +86,6 @@
 		4C82479014F59F95005DF084 = {
 			isa = PBXGroup;
 			children = (
-				4C8247BC14F5A0E4005DF084 /* Default-Landscape~ipad.png */,
 				4C8247A514F59F96005DF084 /* LandscapeMp3Player */,
 				4C82479E14F59F96005DF084 /* Frameworks */,
 				4C82479C14F59F96005DF084 /* Products */,
@@ -102,11 +126,24 @@
 		4C8247A614F59F96005DF084 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C8247D414F5C1A6005DF084 /* bunny_0000_Frame-12.png */,
+				4C8247D514F5C1A6005DF084 /* bunny_0001_Frame-11.png */,
+				4C8247D614F5C1A6005DF084 /* bunny_0002_Frame-10.png */,
+				4C8247D714F5C1A6005DF084 /* bunny_0003_Frame-9.png */,
+				4C8247D814F5C1A7005DF084 /* bunny_0004_Frame-8.png */,
+				4C8247D914F5C1A7005DF084 /* bunny_0005_Frame-7.png */,
+				4C8247DA14F5C1A7005DF084 /* bunny_0006_Frame-6.png */,
+				4C8247DB14F5C1A7005DF084 /* bunny_0007_Frame-5.png */,
+				4C8247DC14F5C1A7005DF084 /* bunny_0008_Frame-4.png */,
+				4C8247DD14F5C1A7005DF084 /* bunny_0009_Frame-3.png */,
+				4C8247DE14F5C1A7005DF084 /* bunny_0010_Frame-2.png */,
+				4C8247DF14F5C1A7005DF084 /* bunny_0011_Frame-1.png */,
+				4C8247D014F5BC9B005DF084 /* playsunbutton.png */,
+				4C8247C814F5BADB005DF084 /* player_draft.png */,
 				4C8247C614F5A855005DF084 /* admincloud.png */,
 				4C8247C414F5A847005DF084 /* bunny.png */,
 				4C8247C214F5A73B005DF084 /* previouscloud.png */,
 				4C8247C014F5A6AC005DF084 /* nextcloud.png */,
-				4C8247BE14F5A479005DF084 /* playsun.png */,
 				4C8247A714F59F96005DF084 /* LandscapeMp3Player-Info.plist */,
 				4C8247A814F59F96005DF084 /* InfoPlist.strings */,
 				4C8247AB14F59F96005DF084 /* main.m */,
@@ -168,11 +205,24 @@
 			files = (
 				4C8247AA14F59F96005DF084 /* InfoPlist.strings in Resources */,
 				4C8247B314F59F96005DF084 /* MainStoryboard.storyboard in Resources */,
-				4C8247BF14F5A479005DF084 /* playsun.png in Resources */,
 				4C8247C114F5A6AC005DF084 /* nextcloud.png in Resources */,
 				4C8247C314F5A73B005DF084 /* previouscloud.png in Resources */,
 				4C8247C514F5A847005DF084 /* bunny.png in Resources */,
 				4C8247C714F5A855005DF084 /* admincloud.png in Resources */,
+				4C8247C914F5BADB005DF084 /* player_draft.png in Resources */,
+				4C8247D114F5BC9B005DF084 /* playsunbutton.png in Resources */,
+				4C8247E014F5C1A7005DF084 /* bunny_0000_Frame-12.png in Resources */,
+				4C8247E114F5C1A7005DF084 /* bunny_0001_Frame-11.png in Resources */,
+				4C8247E214F5C1A7005DF084 /* bunny_0002_Frame-10.png in Resources */,
+				4C8247E314F5C1A7005DF084 /* bunny_0003_Frame-9.png in Resources */,
+				4C8247E414F5C1A7005DF084 /* bunny_0004_Frame-8.png in Resources */,
+				4C8247E514F5C1A7005DF084 /* bunny_0005_Frame-7.png in Resources */,
+				4C8247E614F5C1A7005DF084 /* bunny_0006_Frame-6.png in Resources */,
+				4C8247E714F5C1A7005DF084 /* bunny_0007_Frame-5.png in Resources */,
+				4C8247E814F5C1A7005DF084 /* bunny_0008_Frame-4.png in Resources */,
+				4C8247E914F5C1A7005DF084 /* bunny_0009_Frame-3.png in Resources */,
+				4C8247EA14F5C1A7005DF084 /* bunny_0010_Frame-2.png in Resources */,
+				4C8247EB14F5C1A7005DF084 /* bunny_0011_Frame-1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +267,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Nipper (UQQ4J488Q2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Nipper (UQQ4J488Q2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -232,6 +283,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "6A10B5DB-5182-4FAC-A6F7-832E1F7B928B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6A10B5DB-5182-4FAC-A6F7-832E1F7B928B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -243,6 +296,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Nipper (UQQ4J488Q2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -252,6 +306,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "6A10B5DB-5182-4FAC-A6F7-832E1F7B928B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -261,10 +316,14 @@
 		4C8247BA14F59F96005DF084 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Nipper (UQQ4J488Q2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Nipper (UQQ4J488Q2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LandscapeMp3Player/LandscapeMp3Player-Prefix.pch";
 				INFOPLIST_FILE = "LandscapeMp3Player/LandscapeMp3Player-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6A10B5DB-5182-4FAC-A6F7-832E1F7B928B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6A10B5DB-5182-4FAC-A6F7-832E1F7B928B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -272,10 +331,12 @@
 		4C8247BB14F59F96005DF084 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michael Nipper (UQQ4J488Q2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LandscapeMp3Player/LandscapeMp3Player-Prefix.pch";
 				INFOPLIST_FILE = "LandscapeMp3Player/LandscapeMp3Player-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6A10B5DB-5182-4FAC-A6F7-832E1F7B928B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
