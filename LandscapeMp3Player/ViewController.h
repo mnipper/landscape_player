@@ -20,8 +20,8 @@
 - (IBAction)previousTrack:(id)sender;
 - (IBAction)nextTrack:(id)sender;
 - (IBAction)adminButton:(id)sender;
-- (void)animateBunny;
-- (void)bunnyHop;
+- (void)animateBunny:(int)seconds;
+- (void)bunnyHop:(double)seconds;
 - (void)bunnyShuffle;
 
 @end

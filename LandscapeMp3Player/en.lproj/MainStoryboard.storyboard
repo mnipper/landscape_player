@@ -88,6 +88,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="adminCloud" destination="hm7-1K-cSw" id="eYV-IY-4lN"/>
                         <outlet property="bunnyImageView" destination="ElU-OH-Mxr" id="7gJ-oq-jVB"/>
@@ -107,6 +108,22 @@
         <image name="playsunbutton.png" width="350" height="350"/>
         <image name="previouscloud.png" width="200" height="150"/>
     </resources>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="adminButton:"/>
+                <relationship kind="action" name="nextTrack:"/>
+                <relationship kind="action" name="playSun:"/>
+                <relationship kind="action" name="previousTrack:"/>
+                <relationship kind="outlet" name="adminCloud" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="bunnyImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nextCloud" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="playSunButton" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="previousCloud" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>

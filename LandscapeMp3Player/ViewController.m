@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@implementation ViewController
+@implementation ViewController;
 @synthesize bunnyImageView;
 @synthesize adminCloud;
 @synthesize nextCloud;
@@ -66,15 +66,23 @@ NSTimer *timer;
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return YES;
+    
+    if (interfaceOrientation == UIInterfaceOrientationPortrait
+        || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown
+        || interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        return NO;
+    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
+        return YES;
+    
+    return NO;
+    
 }
 
 - (IBAction)playSun:(id)sender {
     
     NSLog(@"Play.");
     
-    [self animateBunny];
+    [self animateBunny:180];
     
 }
 
@@ -96,16 +104,18 @@ NSTimer *timer;
     
 }
 
-- (void)animateBunny
-{
+- (void)animateBunny:(int)seconds {
+    
+    double durationUnit = seconds / 200.0;
+    
     // This is the method that makes the bunny hop up and down.
-    [self bunnyHop];
+    [self bunnyHop:durationUnit*2];
     
     // This is the timer that makes the bunny hop right.
-    timer = [NSTimer scheduledTimerWithTimeInterval:.6 target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
+    timer = [NSTimer scheduledTimerWithTimeInterval:durationUnit target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
 }
 
-- (void)bunnyHop
+- (void)bunnyHop:(double)seconds
 {
     UIImage *bunny1 = [UIImage imageNamed:@"bunny_0011_Frame-1.png"];
     UIImage *bunny2 = [UIImage imageNamed:@"bunny_0010_Frame-2.png"];
@@ -123,7 +133,7 @@ NSTimer *timer;
     // Set the animation to continuously animate every 1.2 seconds.
     self.bunnyImageView.animationImages = [[NSArray alloc] initWithObjects:bunny1, bunny2, bunny3, bunny4, bunny5, bunny6, bunny7, bunny8, bunny9, bunny10, bunny11, bunny12, nil];
     self.bunnyImageView.animationRepeatCount = 0;
-    self.bunnyImageView.animationDuration = 1.2;
+    self.bunnyImageView.animationDuration = seconds;
     [self.bunnyImageView startAnimating];
 }
 
