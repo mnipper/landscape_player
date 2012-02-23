@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController : UIViewController
+{
+    MPMusicPlayerController *musicPlayer;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *bunnyImageView;
 @property (weak, nonatomic) IBOutlet UIButton *adminCloud;
 @property (weak, nonatomic) IBOutlet UIButton *nextCloud;
 @property (weak, nonatomic) IBOutlet UIButton *previousCloud;
 @property (weak, nonatomic) IBOutlet UIImageView *playSunButton;
+@property (nonatomic, retain) MPMusicPlayerController *musicPlayer; 
 
 - (IBAction)playSun:(id)sender;
 - (IBAction)previousTrack:(id)sender;
@@ -23,5 +28,10 @@
 - (void)animateBunny:(int)seconds;
 - (void)bunnyHop:(double)seconds;
 - (void)bunnyShuffle;
+
+- (IBAction)playOrPauseSong:(id) sender;
+- (IBAction)playNext:(id) sender;
+- (IBAction)playPrevious:(id) sender;
+- (IBAction) openMediaPicker: (id) sender;
 
 @end

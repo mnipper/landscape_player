@@ -14,8 +14,10 @@
 @synthesize nextCloud;
 @synthesize previousCloud;
 @synthesize playSunButton;
+@synthesize musicPlayer;
 
 NSTimer *timer;
+BOOL playing = NO;
 
 - (void)didReceiveMemoryWarning
 {
@@ -29,6 +31,13 @@ NSTimer *timer;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.musicPlayer = [MPMusicPlayerController iPodMusicPlayer];
+    [self.musicPlayer setQueueWithQuery: [MPMediaQuery songsQuery]];
+    [self.musicPlayer stop];
+    //[self handleNowPlayingItemChanged:nil];
+    //[self handlePlaybackStateChanged:nil];
+    //[self handleExternalVolumeChanged:nil]; 
 }
 
 - (void)viewDidUnload
@@ -69,9 +78,9 @@ NSTimer *timer;
     
     if (interfaceOrientation == UIInterfaceOrientationPortrait
         || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown
-        || interfaceOrientation == UIInterfaceOrientationLandscapeRight)
+        || interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
         return NO;
-    if (interfaceOrientation == UIInterfaceOrientationLandscapeLeft)
+    if (interfaceOrientation == UIInterfaceOrientationLandscapeRight)
         return YES;
     
     return NO;
@@ -80,27 +89,25 @@ NSTimer *timer;
 
 - (IBAction)playSun:(id)sender {
     
-    NSLog(@"Play.");
-    
-    [self animateBunny:180];
+    [self playOrPauseSong:self];
     
 }
 
 - (IBAction)previousTrack:(id)sender {
     
-    NSLog(@"Previous Track.");
+    [self playPrevious:self];
     
 }
 
 - (IBAction)nextTrack:(id)sender {
     
-    NSLog(@"Next Track.");
+   [self playNext:self];
     
 }
 
 - (IBAction)adminButton:(id)sender {
     
-    NSLog(@"Admin Button.");
+    [self openMediaPicker:self];
     
 }
 
@@ -149,5 +156,85 @@ NSTimer *timer;
     }
     
 }
+
+//play/pause functionality
+
+- (IBAction) playOrPauseSong:(id)sender{
+
+    if (playing == YES) {
+        
+        [timer invalidate];
+        [self.bunnyImageView stopAnimating];
+        [self.musicPlayer pause];
+        playing = NO;
+        
+    } else {
+        
+        [timer invalidate];
+        [self.musicPlayer play];
+        int trackLength = [[[musicPlayer nowPlayingItem] valueForProperty: @"playbackDuration"] intValue];
+        [self animateBunny:trackLength];
+        playing = YES;
+        
+    } 
+    
+} 
+
+//action to be tied to "Next" Button
+
+-(IBAction) playNext:(id)sender {
+    
+    [timer invalidate];
+    [self.musicPlayer skipToNextItem];
+    [self.musicPlayer play];
+    self.bunnyImageView.center = CGPointMake(70, self.bunnyImageView.center.y);
+    int trackLength = [[[musicPlayer nowPlayingItem] valueForProperty: @"playbackDuration"] intValue];
+    [self animateBunny:trackLength];
+    playing = YES;
+    
+} 
+
+//action to be tied to "Previous" Button
+
+-(IBAction) playPrevious: (id) sender {
+    
+    [timer invalidate];
+    [self.musicPlayer skipToPreviousItem];
+    [self.musicPlayer play];
+    self.bunnyImageView.center = CGPointMake(70, self.bunnyImageView.center.y);
+    int trackLength = [[[musicPlayer nowPlayingItem] valueForProperty: @"playbackDuration"] intValue];
+    [self animateBunny:trackLength];
+    playing = YES;
+    
+} 
+
+-(IBAction)openMediaPicker:(id)sender {
+    
+    MPMediaPickerController *mediaPicker = [[MPMediaPickerController alloc] initWithMediaTypes:MPMediaTypeMusic];
+    
+    mediaPicker.delegate = self;
+    
+    mediaPicker.allowsPickingMultipleItems = YES;
+    
+    [self presentModalViewController:mediaPicker animated:YES];
+        
+} 
+
+- (void)mediaPicker:(MPMediaPickerController*)mediaPicker didPickMediaItems:(MPMediaItemCollection *)mediaItemCollection {
+    
+    [self dismissModalViewControllerAnimated: YES];
+    
+    [self.musicPlayer setQueueWithItemCollection:mediaItemCollection];
+    
+    [self.musicPlayer stop];
+    
+    
+} 
+
+- (void) mediaPickerDidCancel: (MPMediaPickerController*)mediaPicker {
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
+} 
 
 @end
