@@ -21,5 +21,6 @@
 - (IBAction)nextTrack:(id)sender;
 - (IBAction)adminButton:(id)sender;
 - (void)bunnyHop;
+- (void)bunnyShuffle;
 
 @end

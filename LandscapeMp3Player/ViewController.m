@@ -15,6 +15,8 @@
 @synthesize previousCloud;
 @synthesize playSunButton;
 
+NSTimer *timer;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -71,7 +73,12 @@
 - (IBAction)playSun:(id)sender {
     
     NSLog(@"Play.");
+    
+    // This is the method that makes the bunny hop up and down.
     [self bunnyHop];
+    
+    // This is the timer that makes the bunny hop right.
+    timer = [NSTimer scheduledTimerWithTimeInterval:.6 target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
     
 }
 
@@ -108,10 +115,24 @@
     UIImage *bunny11 = [UIImage imageNamed:@"bunny_0001_Frame-11.png"];
     UIImage *bunny12 = [UIImage imageNamed:@"bunny_0000_Frame-12.png"];
     
+    // Set the animation to continuously animate every 1.2 seconds.
     self.bunnyImageView.animationImages = [[NSArray alloc] initWithObjects:bunny1, bunny2, bunny3, bunny4, bunny5, bunny6, bunny7, bunny8, bunny9, bunny10, bunny11, bunny12, nil];
     self.bunnyImageView.animationRepeatCount = 0;
     self.bunnyImageView.animationDuration = 1.2;
     [self.bunnyImageView startAnimating];
+}
+
+- (void)bunnyShuffle:(NSTimer*)theTimer
+{
+    // Make the bunny hop 5 pixels right every time this method is called.
+    self.bunnyImageView.center = CGPointMake(self.bunnyImageView.center.x + 5, self.bunnyImageView.center.y);
+    
+    // Stop the bunny if he reaches the end of the world, 920 pixels.
+    if (self.bunnyImageView.center.x >= 920) {
+        [timer invalidate];
+        [self.bunnyImageView stopAnimating];
+    }
+    
 }
 
 @end
