@@ -14,12 +14,13 @@
     MPMusicPlayerController *musicPlayer;
 }
 
+@property (weak, nonatomic) IBOutlet UIButton *sunButton;
 @property (weak, nonatomic) IBOutlet UIImageView *bunnyImageView;
 @property (weak, nonatomic) IBOutlet UIButton *adminCloud;
 @property (weak, nonatomic) IBOutlet UIButton *nextCloud;
 @property (weak, nonatomic) IBOutlet UIButton *previousCloud;
-@property (weak, nonatomic) IBOutlet UIImageView *playSunButton;
 @property (nonatomic, retain) MPMusicPlayerController *musicPlayer; 
+@property (weak, nonatomic) IBOutlet UIButton *shuffleButton;
 
 - (IBAction)playSun:(id)sender;
 - (IBAction)previousTrack:(id)sender;
@@ -33,5 +34,6 @@
 - (IBAction)playNext:(id) sender;
 - (IBAction)playPrevious:(id) sender;
 - (IBAction) openMediaPicker: (id) sender;
+- (IBAction) shuffle: (id) sender;
 
 @end

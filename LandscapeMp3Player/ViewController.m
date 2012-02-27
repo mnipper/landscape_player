@@ -9,15 +9,17 @@
 #import "ViewController.h"
 
 @implementation ViewController;
+@synthesize sunButton;
 @synthesize bunnyImageView;
 @synthesize adminCloud;
 @synthesize nextCloud;
 @synthesize previousCloud;
-@synthesize playSunButton;
 @synthesize musicPlayer;
+@synthesize shuffleButton;
 
 NSTimer *timer;
 BOOL playing = NO;
+BOOL shuffling = NO;
 
 - (void)didReceiveMemoryWarning
 {
@@ -37,17 +39,17 @@ BOOL playing = NO;
     [self.musicPlayer stop];
     //[self handleNowPlayingItemChanged:nil];
     //[self handlePlaybackStateChanged:nil];
-    //[self handleExternalVolumeChanged:nil]; 
+    //[self handleExternalVolumeChanged:nil];
 }
 
 - (void)viewDidUnload
 {
-    [self setPlaySunButton:nil];
-    [self setPlaySunButton:nil];
     [self setPreviousCloud:nil];
     [self setNextCloud:nil];
     [self setAdminCloud:nil];
     [self setBunnyImageView:nil];
+    [self setShuffleButton:nil];
+    [self setSunButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -166,14 +168,19 @@ BOOL playing = NO;
         [timer invalidate];
         [self.bunnyImageView stopAnimating];
         [self.musicPlayer pause];
+        
+        [sunButton setImage:[UIImage imageNamed:@"playsunbutton.png"] forState:UIControlStateNormal];
         playing = NO;
         
     } else {
         
         [timer invalidate];
         [self.musicPlayer play];
+        
         int trackLength = [[[musicPlayer nowPlayingItem] valueForProperty: @"playbackDuration"] intValue];
         [self animateBunny:trackLength];
+        
+        [sunButton setImage:[UIImage imageNamed:@"pausesunbutton.png"] forState:UIControlStateNormal];
         playing = YES;
         
     } 
@@ -207,6 +214,16 @@ BOOL playing = NO;
     playing = YES;
     
 } 
+
+-(IBAction) shuffle: (id) sender {
+    if (shuffling == NO) {
+        [shuffleButton setImage:[UIImage imageNamed:@"shufflebutton_activated.png"] forState:UIControlStateNormal];
+        shuffling = YES;
+    } else {
+        [shuffleButton setImage:[UIImage imageNamed:@"shufflebutton.png"] forState:UIControlStateNormal];
+        shuffling = NO;
+    }
+}
 
 -(IBAction)openMediaPicker:(id)sender {
     

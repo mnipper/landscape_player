@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4C062A8C14F699B400D05805 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C062A8B14F699B400D05805 /* MediaPlayer.framework */; };
 		4C062A8F14F69A0500D05805 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C062A8E14F69A0500D05805 /* MediaPlayer.framework */; };
+		4C062A9314F6CFB100D05805 /* pausesunbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C062A9214F6CFB100D05805 /* pausesunbutton.png */; };
+		4C062A9914FBCAD700D05805 /* shufflebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C062A9814FBCAD700D05805 /* shufflebutton.png */; };
+		4C062A9C14FBCADF00D05805 /* shufflebutton_activated.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C062A9B14FBCADF00D05805 /* shufflebutton_activated.png */; };
 		4C8247A014F59F96005DF084 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C82479F14F59F96005DF084 /* UIKit.framework */; };
 		4C8247A214F59F96005DF084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8247A114F59F96005DF084 /* Foundation.framework */; };
 		4C8247A414F59F96005DF084 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8247A314F59F96005DF084 /* CoreGraphics.framework */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		4C062A8B14F699B400D05805 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		4C062A8E14F69A0500D05805 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		4C062A9214F6CFB100D05805 /* pausesunbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pausesunbutton.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/pausesunbutton.png; sourceTree = "<group>"; };
+		4C062A9814FBCAD700D05805 /* shufflebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shufflebutton.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/shufflebutton.png; sourceTree = "<group>"; };
+		4C062A9B14FBCADF00D05805 /* shufflebutton_activated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = shufflebutton_activated.png; path = ../../SoftwareEngineeringDropbox/LandscapeMp3PlayerGUI/shufflebutton_activated.png; sourceTree = "<group>"; };
 		4C82479B14F59F96005DF084 /* LandscapeMp3Player.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandscapeMp3Player.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C82479F14F59F96005DF084 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C8247A114F59F96005DF084 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +140,9 @@
 		4C8247A614F59F96005DF084 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C062A9B14FBCADF00D05805 /* shufflebutton_activated.png */,
+				4C062A9814FBCAD700D05805 /* shufflebutton.png */,
+				4C062A9214F6CFB100D05805 /* pausesunbutton.png */,
 				4C8247D414F5C1A6005DF084 /* bunny_0000_Frame-12.png */,
 				4C8247D514F5C1A6005DF084 /* bunny_0001_Frame-11.png */,
 				4C8247D614F5C1A6005DF084 /* bunny_0002_Frame-10.png */,
@@ -231,6 +240,9 @@
 				4C8247E914F5C1A7005DF084 /* bunny_0009_Frame-3.png in Resources */,
 				4C8247EA14F5C1A7005DF084 /* bunny_0010_Frame-2.png in Resources */,
 				4C8247EB14F5C1A7005DF084 /* bunny_0011_Frame-1.png in Resources */,
+				4C062A9314F6CFB100D05805 /* pausesunbutton.png in Resources */,
+				4C062A9914FBCAD700D05805 /* shufflebutton.png in Resources */,
+				4C062A9C14FBCADF00D05805 /* shufflebutton_activated.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
