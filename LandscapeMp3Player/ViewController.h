@@ -29,6 +29,7 @@
 - (void)animateBunny:(int)seconds;
 - (void)bunnyHop:(double)seconds;
 - (void)bunnyShuffle;
+- (void) setTimer: (double)durationUnit;
 
 - (IBAction)playOrPauseSong:(id) sender;
 - (IBAction)playNext:(id) sender;

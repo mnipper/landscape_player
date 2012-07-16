@@ -18,6 +18,7 @@
 @synthesize shuffleButton;
 
 NSTimer *timer;
+
 BOOL playing = NO;
 BOOL shuffling = NO;
 
@@ -115,13 +116,14 @@ BOOL shuffling = NO;
 
 - (void)animateBunny:(int)seconds {
     
-    double durationUnit = seconds / 200.0;
+    double durationUnit = 126.2 / seconds;
     
     // This is the method that makes the bunny hop up and down.
     [self bunnyHop:durationUnit*2];
     
     // This is the timer that makes the bunny hop right.
-    timer = [NSTimer scheduledTimerWithTimeInterval:durationUnit target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
+    [self setTimer:durationUnit];
+    
 }
 
 - (void)bunnyHop:(double)seconds
@@ -194,9 +196,10 @@ BOOL shuffling = NO;
     [timer invalidate];
     [self.musicPlayer skipToNextItem];
     [self.musicPlayer play];
-    self.bunnyImageView.center = CGPointMake(70, self.bunnyImageView.center.y);
+    self.bunnyImageView.center = CGPointMake(84, self.bunnyImageView.center.y);
     int trackLength = [[[musicPlayer nowPlayingItem] valueForProperty: @"playbackDuration"] intValue];
     [self animateBunny:trackLength];
+    [sunButton setImage:[UIImage imageNamed:@"pausesunbutton.png"] forState:UIControlStateNormal];
     playing = YES;
     
 } 
@@ -208,9 +211,10 @@ BOOL shuffling = NO;
     [timer invalidate];
     [self.musicPlayer skipToPreviousItem];
     [self.musicPlayer play];
-    self.bunnyImageView.center = CGPointMake(70, self.bunnyImageView.center.y);
+    self.bunnyImageView.center = CGPointMake(84, self.bunnyImageView.center.y);
     int trackLength = [[[musicPlayer nowPlayingItem] valueForProperty: @"playbackDuration"] intValue];
     [self animateBunny:trackLength];
+    [sunButton setImage:[UIImage imageNamed:@"pausesunbutton.png"] forState:UIControlStateNormal];
     playing = YES;
     
 } 
@@ -218,9 +222,11 @@ BOOL shuffling = NO;
 -(IBAction) shuffle: (id) sender {
     if (shuffling == NO) {
         [shuffleButton setImage:[UIImage imageNamed:@"shufflebutton_activated.png"] forState:UIControlStateNormal];
+        [self.musicPlayer setShuffleMode: MPMusicShuffleModeSongs];
         shuffling = YES;
     } else {
         [shuffleButton setImage:[UIImage imageNamed:@"shufflebutton.png"] forState:UIControlStateNormal];
+                [self.musicPlayer setShuffleMode: MPMusicShuffleModeOff];
         shuffling = NO;
     }
 }
@@ -253,5 +259,16 @@ BOOL shuffling = NO;
     [self dismissModalViewControllerAnimated:YES];
     
 } 
+
+- (void) setTimer: (double)durationUnit
+{
+    if (timer != nil) {
+        [timer invalidate];
+        timer = nil;
+    }
+        
+        // This is the timer that makes the bunny hop right.
+        timer = [NSTimer scheduledTimerWithTimeInterval:durationUnit target:self selector:@selector(bunnyShuffle:) userInfo:nil repeats:YES];
+}
 
 @end
